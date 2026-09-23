@@ -193,3 +193,12 @@ font-weight: 700;
   color: #555;
   line-height: 1.5;
 }
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    margin: 20px auto;
+    .boxes {
+  flex-direction: column;
+}
+  }
+}
