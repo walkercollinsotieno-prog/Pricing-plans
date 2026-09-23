@@ -197,7 +197,5 @@ font-weight: 700;
   .container {
     width: 90%;
     margin: 20px auto;
-    .boxes {
-  flex-direction: column;
-}
   }
+}
