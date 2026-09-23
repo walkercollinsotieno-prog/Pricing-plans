@@ -200,6 +200,17 @@ font-weight: 700;
     align-items: center;
     flex-wrap: nowrap;
   }
+  @media (max-width: 700px) {
+  .pricing-container {
+    display: block;
+  }
+
+  .pricing-card {
+    width: 80%;
+    margin: 20px auto;
+    box-sizing: border-box;
+  }
+}
 
   .pricing-card {
     width: 80%;
