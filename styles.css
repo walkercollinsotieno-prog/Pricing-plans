@@ -29,7 +29,7 @@ border-color: #3498db;
 }
 .pro-plan{
   order: 1;
-  flex-grow: 2;
+  flex-grow: 0;
   background: #fff8e1;
 border-color: #f39c12;
 padding-top: 35px;
