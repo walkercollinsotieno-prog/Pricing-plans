@@ -160,13 +160,10 @@ h1 {
 .pro-plan button,
 .premium-plan button {
   width: 100%;
-
   color: white;
   border: none;
-
   padding: 12px 20px;
   border-radius: 8px;
-
   font-size: 16px;
   cursor: pointer;
 }
@@ -210,7 +207,6 @@ h1 {
 .popular-badge {
   display: block;
   width: fit-content;
-
   margin: 0 auto 15px;
 
   background: #f39c12;
@@ -259,7 +255,7 @@ h1 {
     flex-direction: row;
     flex-wrap: nowrap;
 
-    justify-content: space-between;
+    justify-content: center;
     align-items: stretch;
 
     gap: 4px;
