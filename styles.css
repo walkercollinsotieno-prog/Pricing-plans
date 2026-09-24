@@ -214,58 +214,72 @@ h1 {
 
 /* Mobile */
 @media (max-width: 768px) {
+  body {
+    padding: 20px 10px;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .page-description {
+    font-size: 13px;
+    margin-top: -5px;
+    margin-bottom: 20px;
+  }
+
   .pricing-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    gap: 8px;
+    align-items: flex-start;
+    gap: 6px;
     width: 50%;
   }
 
   .pricing-card {
-    flex: 0 0 90px;
-    width: 90px;
+    flex: 0 0 80px;
+    width: 80px;
     min-height: 120px;
-    padding: 10px;
+    padding: 8px;
     box-sizing: border-box;
-    transform: scale(1);
+    transform: none;
   }
 
   .pricing-card h2 {
-    font-size: 16px;
-    margin-bottom: 8px;
+    font-size: 15px;
+    margin-bottom: 5px;
   }
 
   .pricing-card p {
-    font-size: 14px;
+    font-size: 12px;
     margin: 5px 0;
-  }
-
-  .pricing-card li {
-    font-size: 10px;
-    padding: 4px 0;
   }
 
   .pricing-card ul {
     margin: 8px 0;
   }
 
+  .pricing-card li {
+    font-size: 9px;
+    padding: 3px 0;
+    line-height: 1.2;
+  }
+
   .pricing-card button {
-    font-size: 10px;
-    padding: 6px 4px;
+    font-size: 9px;
+    padding: 5px 2px;
   }
 
   .popular-badge {
-    font-size: 7px;
-    padding: 4px 6px;
-    margin-bottom: 8px;
+    font-size: 6px;
+    padding: 3px 5px;
+    margin-bottom: 5px;
   }
-
-  h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
+}
 
   .page-description {
     font-size: 13px;
