@@ -212,8 +212,10 @@ h1 {
   line-height: 1.5;
 }
 
-/* Mobile */
+
+/* MOBILE */
 @media (max-width: 768px) {
+
   body {
     padding: 20px 10px;
     overflow-x: hidden;
@@ -236,53 +238,47 @@ h1 {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 6px;
+    gap: 5px;
     width: 50%;
   }
 
   .pricing-card {
-    flex: 0 0 80px;
-    width: 80px;
+    flex: 0 0 70px;
+    width: 70px;
     min-height: 120px;
-    padding: 8px;
+    padding: 6px;
     box-sizing: border-box;
     transform: none;
   }
 
   .pricing-card h2 {
-    font-size: 15px;
-    margin-bottom: 5px;
+    font-size: 13px;
+    margin-bottom: 4px;
   }
 
   .pricing-card p {
-    font-size: 12px;
-    margin: 5px 0;
+    font-size: 10px;
+    margin: 4px 0;
   }
 
   .pricing-card ul {
-    margin: 8px 0;
+    margin: 6px 0;
   }
 
   .pricing-card li {
-    font-size: 9px;
+    font-size: 8px;
     padding: 3px 0;
     line-height: 1.2;
   }
 
   .pricing-card button {
-    font-size: 9px;
-    padding: 5px 2px;
+    font-size: 8px;
+    padding: 4px 2px;
   }
 
   .popular-badge {
-    font-size: 6px;
-    padding: 3px 5px;
-    margin-bottom: 5px;
-  }
-}
-
-  .page-description {
-    font-size: 13px;
-    margin-bottom: 20px;
+    font-size: 5px;
+    padding: 2px 4px;
+    margin-bottom: 4px;
   }
 }
