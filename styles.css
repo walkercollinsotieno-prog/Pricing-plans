@@ -11,12 +11,17 @@ body {
   min-height: 100vh;
 }
 
+/* PAGE TITLE */
+
 h1 {
   text-align: center;
   font-size: 42px;
   margin: 0 0 40px;
   letter-spacing: 1px;
+  font-weight: 700;
 }
+
+/* DESCRIPTION */
 
 .page-description {
   text-align: center;
@@ -35,7 +40,7 @@ h1 {
   gap: 25px;
 }
 
-/* CARDS */
+/* PRICING CARDS */
 
 .pricing-card {
   display: flex;
@@ -43,6 +48,8 @@ h1 {
   justify-content: space-between;
 
   width: 250px;
+  min-height: 300px;
+
   padding: 25px;
 
   border: 1px solid;
@@ -51,8 +58,6 @@ h1 {
   background: white;
 
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-
-  min-height: 300px;
 
   transition: transform 0.3s ease,
               box-shadow 0.3s ease;
@@ -87,7 +92,7 @@ h1 {
   border-color: #8e44ad;
 }
 
-/* HEADINGS */
+/* CARD HEADINGS */
 
 .pricing-card h2 {
   font-size: 28px;
@@ -100,9 +105,10 @@ h1 {
   font-weight: bold;
   text-align: center;
   margin: 10px 0;
+  letter-spacing: 0.5px;
 }
 
-/* COLORS */
+/* HEADING COLORS */
 
 .basic-plan h2 {
   color: #3498db;
@@ -153,35 +159,41 @@ h1 {
   border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-/* BADGE */
+/* POPULAR BADGE */
 
 .popular-badge {
   display: block;
   width: fit-content;
+
   margin: 0 auto 15px;
 
   background: #f39c12;
   color: white;
 
   padding: 6px 12px;
+
   border-radius: 20px;
 
   font-size: 12px;
   font-weight: bold;
+  letter-spacing: 1px;
 }
 
 /* BUTTONS */
 
 .pricing-card button {
   width: 100%;
+
   border: none;
 
   color: white;
 
   padding: 12px 20px;
+
   border-radius: 8px;
 
   font-size: 16px;
+
   cursor: pointer;
 }
 
@@ -197,6 +209,8 @@ h1 {
   background: #8e44ad;
 }
 
+/* BUTTON HOVER */
+
 .basic-plan button:hover {
   background: #2980b9;
 }
@@ -209,10 +223,25 @@ h1 {
   background: #71368a;
 }
 
+.pricing-card button:hover {
+  transform: translateY(-2px);
+}
 
-/* ================================= */
-/* PHONE */
-/* ================================= */
+/* CARD HOVER */
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+.pro-plan:hover {
+  transform: scale(1.05) translateY(-8px);
+}
+
+
+/* ========================================= */
+/*                 PHONE                     */
+/* ========================================= */
 
 @media (max-width: 768px) {
 
@@ -231,6 +260,8 @@ h1 {
     margin: 0 0 20px;
   }
 
+  /* THREE CARDS SIDE BY SIDE */
+
   .pricing-container {
     display: flex;
 
@@ -240,57 +271,70 @@ h1 {
     justify-content: flex-start;
     align-items: flex-start;
 
-    gap: 5px;
+    gap: 8px;
 
-    width: 50%;
+    width: 100%;
   }
 
+  /* SAME SIZE FOR ALL CARDS */
+
   .pricing-card {
-    width: 70px;
-    min-width: 70px;
+    width: 105px;
+    min-width: 105px;
 
-    flex: 0 0 70px;
+    flex: 0 0 105px;
 
-    min-height: 150px;
+    min-height: 220px;
 
-    padding: 6px;
+    padding: 10px;
 
-    border-radius: 8px;
+    border-radius: 10px;
 
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 
     transform: none;
   }
 
+  /* CARD TITLE */
+
   .pricing-card h2 {
-    font-size: 12px;
-    margin: 0 0 5px;
+    font-size: 16px;
+    margin: 0 0 8px;
   }
+
+  /* PRICE */
 
   .pricing-card p {
-    font-size: 10px;
-    margin: 4px 0;
-  }
-
-  .pricing-card ul {
+    font-size: 13px;
     margin: 5px 0;
   }
 
-  .pricing-card li {
-    font-size: 7px;
-    padding: 3px 0;
-    line-height: 1.2;
+  /* FEATURES */
+
+  .pricing-card ul {
+    margin: 10px 0;
   }
+
+  .pricing-card li {
+    font-size: 9px;
+    padding: 4px 0;
+    line-height: 1.3;
+  }
+
+  /* BUTTON */
 
   .pricing-card button {
-    font-size: 7px;
-    padding: 5px 2px;
-    border-radius: 5px;
+    font-size: 9px;
+    padding: 7px 3px;
+    border-radius: 6px;
   }
 
+  /* POPULAR */
+
   .popular-badge {
-    font-size: 5px;
-    padding: 2px 4px;
-    margin-bottom: 5px;
+    font-size: 6px;
+    padding: 3px 5px;
+    margin-bottom: 7px;
   }
+
 }
