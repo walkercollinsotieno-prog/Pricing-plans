@@ -1,252 +1,7 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 40px 20px;
-  font-family: Arial, sans-serif;
-  background: #f4f7fb;
-  color: #222;
-  min-height: 100vh;
-}
-
-/* PAGE TITLE */
-
-h1 {
-  text-align: center;
-  font-size: 42px;
-  margin: 0 0 40px;
-  letter-spacing: 1px;
-  font-weight: 700;
-}
-
-/* DESCRIPTION */
-
-.page-description {
-  text-align: center;
-  font-size: 18px;
-  color: #666;
-  margin: -25px 0 40px;
-}
-
-/* PRICING CONTAINER */
-
-.pricing-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
-  gap: 25px;
-}
-
-/* PRICING CARDS */
-
-.pricing-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  width: 250px;
-  min-height: 300px;
-
-  padding: 25px;
-
-  border: 1px solid;
-  border-radius: 15px;
-
-  background: white;
-
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-
-  transition: transform 0.3s ease,
-              box-shadow 0.3s ease;
-}
-
-/* BASIC */
-
-.basic-plan {
-  order: 0;
-  background: #e8f4ff;
-  border-color: #3498db;
-}
-
-/* PRO */
-
-.pro-plan {
-  order: 1;
-  background: #fff8e1;
-  border-color: #f39c12;
-
-  padding-top: 35px;
-  padding-bottom: 35px;
-
-  box-shadow: 0 12px 30px rgba(243, 156, 18, 0.25);
-}
-
-/* PREMIUM */
-
-.premium-plan {
-  order: 2;
-  background: #f3e8ff;
-  border-color: #8e44ad;
-}
-
-/* CARD HEADINGS */
-
-.pricing-card h2 {
-  font-size: 28px;
-  text-align: center;
-  margin: 0 0 15px;
-}
-
-.pricing-card p {
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  margin: 10px 0;
-  letter-spacing: 0.5px;
-}
-
-/* HEADING COLORS */
-
-.basic-plan h2 {
-  color: #3498db;
-}
-
-.pro-plan h2 {
-  color: #f39c12;
-}
-
-.premium-plan h2 {
-  color: #8e44ad;
-}
-
-/* LIST */
-
-.pricing-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
-}
-
-.pricing-card li {
-  padding: 8px 0;
-  text-align: center;
-  font-size: 15px;
-  color: #555;
-  line-height: 1.5;
-}
-
-.pricing-card li::before {
-  content: "✓ ";
-  font-weight: bold;
-}
-
-.basic-plan li::before {
-  color: #3498db;
-}
-
-.pro-plan li::before {
-  color: #f39c12;
-}
-
-.premium-plan li::before {
-  color: #8e44ad;
-}
-
-.pricing-card li + li {
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-}
-
-/* POPULAR BADGE */
-
-.popular-badge {
-  display: block;
-  width: fit-content;
-
-  margin: 0 auto 15px;
-
-  background: #f39c12;
-  color: white;
-
-  padding: 6px 12px;
-
-  border-radius: 20px;
-
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-/* BUTTONS */
-
-.pricing-card button {
-  width: 100%;
-
-  border: none;
-
-  color: white;
-
-  padding: 12px 20px;
-
-  border-radius: 8px;
-
-  font-size: 16px;
-
-  cursor: pointer;
-}
-
-.basic-plan button {
-  background: #3498db;
-}
-
-.pro-plan button {
-  background: #f39c12;
-}
-
-.premium-plan button {
-  background: #8e44ad;
-}
-
-/* BUTTON HOVER */
-
-.basic-plan button:hover {
-  background: #2980b9;
-}
-
-.pro-plan button:hover {
-  background: #d68910;
-}
-
-.premium-plan button:hover {
-  background: #71368a;
-}
-
-.pricing-card button:hover {
-  transform: translateY(-2px);
-}
-
-/* CARD HOVER */
-
-.pricing-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.18);
-}
-
-.pro-plan:hover {
-  transform: scale(1.05) translateY(-8px);
-}
-
-
-/* ========================================= */
-/*                 PHONE                     */
-/* ========================================= */
-
 @media (max-width: 768px) {
 
   body {
-    padding: 20px 10px;
+    padding: 20px 8px;
     overflow-x: hidden;
   }
 
@@ -260,81 +15,60 @@ h1 {
     margin: 0 0 20px;
   }
 
-  /* THREE CARDS SIDE BY SIDE */
-
   .pricing-container {
     display: flex;
-
     flex-direction: row;
     flex-wrap: nowrap;
-
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
-
-    gap: 8px;
-
+    gap: 5px;
     width: 100%;
   }
 
-  /* SAME SIZE FOR ALL CARDS */
-
   .pricing-card {
-    width: 105px;
-    min-width: 105px;
+    width: 120px;
+    min-width: 120px;
+    flex: 0 0 120px;
 
-    flex: 0 0 105px;
+    min-height: 260px;
 
-    min-height: 220px;
-
-    padding: 10px;
+    padding: 12px;
 
     border-radius: 10px;
-
     box-sizing: border-box;
 
     transform: none;
   }
 
-  /* CARD TITLE */
-
   .pricing-card h2 {
-    font-size: 16px;
+    font-size: 18px;
     margin: 0 0 8px;
   }
 
-  /* PRICE */
-
   .pricing-card p {
-    font-size: 13px;
-    margin: 5px 0;
+    font-size: 14px;
+    margin: 6px 0;
   }
 
-  /* FEATURES */
-
   .pricing-card ul {
-    margin: 10px 0;
+    margin: 12px 0;
   }
 
   .pricing-card li {
-    font-size: 9px;
-    padding: 4px 0;
+    font-size: 10px;
+    padding: 5px 0;
     line-height: 1.3;
   }
 
-  /* BUTTON */
-
   .pricing-card button {
-    font-size: 9px;
-    padding: 7px 3px;
+    font-size: 10px;
+    padding: 8px 3px;
     border-radius: 6px;
   }
 
-  /* POPULAR */
-
   .popular-badge {
-    font-size: 6px;
-    padding: 3px 5px;
-    margin-bottom: 7px;
+    font-size: 7px;
+    padding: 4px 6px;
+    margin-bottom: 8px;
   }
-
 }
